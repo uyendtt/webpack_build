@@ -1,50 +1,66 @@
-const path = require('path');
-const HtmlWebpackPlugin = require('html-webpack-plugin');
-const MiniCssExtractPlugin = require('mini-css-extract-plugin');
-const { CleanWebpackPlugin } = require('clean-webpack-plugin');
-const CopyPlugin = require('copy-webpack-plugin');
-const fs = require('fs')
+const path = require("path");
+const HtmlWebpackPlugin = require("html-webpack-plugin");
+const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const { CleanWebpackPlugin } = require("clean-webpack-plugin");
+const CopyPlugin = require("copy-webpack-plugin");
+const fs = require("fs");
+const webpack = require("webpack");
 
 function generateHtmlPlugins(templateDir) {
-    const templateFiles = fs.readdirSync(path.resolve(__dirname, templateDir))
-    return templateFiles.map(item => {
+    const templateFiles = fs.readdirSync(path.resolve(__dirname, templateDir));
+    return templateFiles.map((item) => {
         // Split names and extension
-        const parts = item.split('.')
-        const name = parts[0]
-        const extension = parts[1]
+        const parts = item.split(".");
+        const name = parts[0];
+        const extension = parts[1];
         return new HtmlWebpackPlugin({
-            filename: `${name}.html`,
-            template: path.resolve(__dirname, `${templateDir}/${name}.${extension}`)
-        })
-    })
+            filename: `${name}.html`,  
+            template: path.resolve(
+                __dirname,
+                `${templateDir}/${name}.${extension}`
+            ),
+        });
+    });
 }
 
 // We will call the function like this:
-const htmlPlugins = generateHtmlPlugins('./src/views')
+const htmlPlugins = generateHtmlPlugins("./src/views");
 
 module.exports = {
     mode: "development",
-    devServer: {},
+    devServer: {
+        contentBase: "./dist",
+        hot: true,
+    },
+    // entry: "./src/vendor/vendor.js",
     entry: {
-        style: './src/scss/index.scss',
+        main: ["./src/vendor/vendor.js", "./src/scss/index.scss"],
     },
     output: {
+        filename: "vendor/vendor.js",
         path: path.resolve(__dirname, "dist"),
-        filename: "vendor/vendor.js"
+    },
+    resolve: {
+        extensions: ["*", ".js", ".jsx"],
     },
     module: {
         rules: [
             {
+                test: /\.(js|jsx)$/,
+                exclude: /node_modules/,
+                use: ["babel-loader"],
+            },
+            {
                 test: /\.twig$/,
                 use: [
-                    'raw-loader',
+                    "raw-loader",
                     {
-                        loader: 'twig-html-loader',
+                        loader: "twig-html-loader",
                         options: {
-                            data: {}
-                        }
-                    }
-                ]
+                            data: {},
+                        },
+                    },
+                ],
             },
             {
                 test: /\.(scss|css)$/,
@@ -52,19 +68,15 @@ module.exports = {
                     MiniCssExtractPlugin.loader,
                     {
                         loader: "css-loader",
-                        options: {
-
-                        }
+                        options: {},
                     },
                     {
                         loader: "sass-loader",
-                        options: {
-
-                        }
-                    }
-                ]
-            }
-        ]
+                        options: {},
+                    },
+                ],
+            },
+        ],
     },
     plugins: [
         new CleanWebpackPlugin(),
@@ -73,9 +85,9 @@ module.exports = {
         }),
         new CopyPlugin({
             patterns: [
-                { from: 'src/assets', to: 'assets' },
-                { from: 'src/js', to: 'js' },
+                { from: "src/assets", to: "assets" },
+                { from: "src/js", to: "js" },
             ],
         }),
-    ].concat(htmlPlugins)
+    ].concat(htmlPlugins),
 };
