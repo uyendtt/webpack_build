@@ -32,6 +32,7 @@ module.exports = {
         contentBase: "./dist",
         hot: true,
     },
+    // entry: "./src/vendor/vendor.js",
     entry: {
         main: ["./src/vendor/vendor.js", "./src/scss/index.scss"],
     },
