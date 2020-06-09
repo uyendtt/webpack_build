@@ -1,0 +1,42 @@
+.introduce_overview{
+    &--right{
+        background-image: url(../assets/images/introduce_overview_pc@2x.png);
+        @media(max-width:1199px){
+            background-image: url(../assets/images/introduce_overview_mobile@2x.png);
+        }
+    }
+}
+
+.app_managerment{
+    background-image: url(../assets/images/icon_home.png);
+}
+
+.contact{
+    &--left{
+        background-image: url(../assets/images/bg_contact@2x.png);
+        @media(max-width:991px){
+            background-image: url(../assets/images/bg_contact_mobile@2x.png);
+        }
+    }
+}
+.map{
+    &_search{
+        .bg_image{
+            background-image: url(../assets/images/map_search-left.jpg);
+        }
+    }
+}
+
+
+.user-acc{
+    &__info{
+        .avatar{
+            background-image: url(../assets/images/user_account_bg_avatar.png);
+        }
+    }
+}
+
+
+.modal-header{
+    background-image: url(../assets/images/product_relative_modal.png)
+}

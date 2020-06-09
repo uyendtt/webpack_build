@@ -1,0 +1,469 @@
+
+@-moz-keyframes coccoc-alo-circle-fill-anim {
+    0% {
+        transform: rotate(0) scale(.7) skew(1deg);
+        opacity: .2
+    }
+    50% {
+        transform: rotate(0) scale(1) skew(1deg);
+        opacity: .2
+    }
+    100% {
+        transform: rotate(0) scale(.7) skew(1deg);
+        opacity: .2
+    }
+}
+
+@-webkit-keyframes coccoc-alo-circle-fill-anim {
+    0% {
+        transform: rotate(0) scale(.7) skew(1deg);
+        opacity: .2
+    }
+    50% {
+        transform: rotate(0) scale(1) skew(1deg);
+        opacity: .2
+    }
+    100% {
+        transform: rotate(0) scale(.7) skew(1deg);
+        opacity: .2
+    }
+}
+    
+@-o-keyframes coccoc-alo-circle-fill-anim {
+    0% {
+        transform: rotate(0) scale(.7) skew(1deg);
+        opacity: .2
+    }
+    50% {
+        transform: rotate(0) scale(1) skew(1deg);
+        opacity: .2
+    }
+    100% {
+        transform: rotate(0) scale(.7) skew(1deg);
+        opacity: .2
+    }
+}
+
+@keyframes coccoc-alo-circle-fill-anim {
+    0% {
+        transform: rotate(0) scale(.7) skew(1deg);
+        opacity: .2
+    }
+    50% {
+        transform: rotate(0) scale(1) skew(1deg);
+        opacity: .2
+    }
+    100% {
+        transform: rotate(0) scale(.7) skew(1deg);
+        opacity: .2
+    }
+}
+
+
+
+@-moz-keyframes coccoc-alo-circle-img-anim {
+    0% {
+        transform: rotate(0) scale(1) skew(1deg)
+    }
+    10% {
+        transform: rotate(-25deg) scale(1) skew(1deg)
+    }
+    20% {
+        transform: rotate(25deg) scale(1) skew(1deg)
+    }
+    30% {
+        transform: rotate(-25deg) scale(1) skew(1deg)
+    }
+    40% {
+        transform: rotate(25deg) scale(1) skew(1deg)
+    }
+    50% {
+        transform: rotate(0) scale(1) skew(1deg)
+    }
+    100% {
+        transform: rotate(0) scale(1) skew(1deg)
+    }
+}
+
+@-webkit-keyframes coccoc-alo-circle-img-anim {
+    0% {
+        transform: rotate(0) scale(1) skew(1deg)
+    }
+    10% {
+        transform: rotate(-25deg) scale(1) skew(1deg)
+    }
+    20% {
+        transform: rotate(25deg) scale(1) skew(1deg)
+    }
+    30% {
+        transform: rotate(-25deg) scale(1) skew(1deg)
+    }
+    40% {
+        transform: rotate(25deg) scale(1) skew(1deg)
+    }
+    50% {
+        transform: rotate(0) scale(1) skew(1deg)
+    }
+    100% {
+        transform: rotate(0) scale(1) skew(1deg)
+    }
+}
+
+@-o-keyframes coccoc-alo-circle-img-anim {
+    0% {
+        transform: rotate(0) scale(1) skew(1deg)
+    }
+    10% {
+        transform: rotate(-25deg) scale(1) skew(1deg)
+    }
+    20% {
+        transform: rotate(25deg) scale(1) skew(1deg)
+    }
+    30% {
+        transform: rotate(-25deg) scale(1) skew(1deg)
+    }
+    40% {
+        transform: rotate(25deg) scale(1) skew(1deg)
+    }
+    50% {
+        transform: rotate(0) scale(1) skew(1deg)
+    }
+    100% {
+        transform: rotate(0) scale(1) skew(1deg)
+    }
+}
+
+@keyframes coccoc-alo-circle-img-anim {
+    0% {
+        transform: rotate(0) scale(1) skew(1deg)
+    }
+    10% {
+        transform: rotate(-25deg) scale(1) skew(1deg)
+    }
+    20% {
+        transform: rotate(25deg) scale(1) skew(1deg)
+    }
+    30% {
+        transform: rotate(-25deg) scale(1) skew(1deg)
+    }
+    40% {
+        transform: rotate(25deg) scale(1) skew(1deg)
+    }
+    50% {
+        transform: rotate(0) scale(1) skew(1deg)
+    }
+    100% {
+        transform: rotate(0) scale(1) skew(1deg)
+    }
+}
+
+
+
+// changeAxis
+@-webkit-keyframes changeAxis {
+    0% {
+        height: 3px;
+        width: 42px
+    }
+
+    50% {
+        width: 3px;
+        height: 3px
+    }
+
+    100% {
+        width: 3px;
+        height: 62%
+    }
+}
+
+@keyframes changeAxis {
+    0% {
+        height: 3px;
+        width: 42px
+    }
+
+    50% {
+        width: 3px;
+        height: 3px
+    }
+
+    100% {
+        width: 3px;
+        height: 62%
+    }
+}
+
+@-webkit-keyframes changeAxisBack {
+    0% {
+        width: 3px;
+        height: 62%
+    }
+
+    50% {
+        width: 3px;
+        height: 3px
+    }
+
+    100% {
+        height: 3px;
+        width: 42px
+    }
+}
+
+@keyframes changeAxisBack {
+    0% {
+        width: 3px;
+        height: 62%
+    }
+
+    50% {
+        width: 3px;
+        height: 3px
+    }
+
+    100% {
+        height: 3px;
+        width: 42px
+    }
+}
+
+
+@-webkit-keyframes phoneSidebar{
+    0% {
+        transform: rotate(-12deg);
+    }
+    8% {
+        transform: rotate(12deg);
+    }
+    10% {
+        transform: rotate(24deg);
+    }
+    18% {
+        transform: rotate(-24deg);
+    }
+    20% {
+        transform: rotate(-24deg);
+    }
+    28% {
+        transform: rotate(24deg);
+    }
+    30% {
+        transform: rotate(24deg);
+    }
+    38% {
+        transform: rotate(-24deg);
+    }
+    40% {
+        transform: rotate(-24deg);
+    }
+    48% {
+        transform: rotate(24deg);
+    }
+    50% {
+        transform: rotate(24deg);
+    }
+    58% {
+        transform: rotate(-24deg);
+    }
+    60% {
+        transform: rotate(-24deg);
+    }
+    68% {
+        transform: rotate(24deg);
+    }
+    75% {
+        transform: rotate(0deg);
+    }
+}
+@keyframes phoneSidebar{
+    0% {
+        transform: rotate(-12deg);
+    }
+    8% {
+        transform: rotate(12deg);
+    }
+    10% {
+        transform: rotate(24deg);
+    }
+    18% {
+        transform: rotate(-24deg);
+    }
+    20% {
+        transform: rotate(-24deg);
+    }
+    28% {
+        transform: rotate(24deg);
+    }
+    30% {
+        transform: rotate(24deg);
+    }
+    38% {
+        transform: rotate(-24deg);
+    }
+    40% {
+        transform: rotate(-24deg);
+    }
+    48% {
+        transform: rotate(24deg);
+    }
+    50% {
+        transform: rotate(24deg);
+    }
+    58% {
+        transform: rotate(-24deg);
+    }
+    60% {
+        transform: rotate(-24deg);
+    }
+    68% {
+        transform: rotate(24deg);
+    }
+    75% {
+        transform: rotate(0deg);
+    }
+}
+@-webkit-keyframes  phoneSidebar{
+    0% {
+        transform: rotate(-12deg);
+    }
+    8% {
+        transform: rotate(12deg);
+    }
+    10% {
+        transform: rotate(24deg);
+    }
+    18% {
+        transform: rotate(-24deg);
+    }
+    20% {
+        transform: rotate(-24deg);
+    }
+    28% {
+        transform: rotate(24deg);
+    }
+    30% {
+        transform: rotate(24deg);
+    }
+    38% {
+        transform: rotate(-24deg);
+    }
+    40% {
+        transform: rotate(-24deg);
+    }
+    48% {
+        transform: rotate(24deg);
+    }
+    50% {
+        transform: rotate(24deg);
+    }
+    58% {
+        transform: rotate(-24deg);
+    }
+    60% {
+        transform: rotate(-24deg);
+    }
+    68% {
+        transform: rotate(24deg);
+    }
+    75% {
+        transform: rotate(0deg);
+    }
+}
+@keyframes phoneSidebar{
+    0% {
+        transform: rotate(-12deg);
+    }
+    8% {
+        transform: rotate(12deg);
+    }
+    10% {
+        transform: rotate(24deg);
+    }
+    18% {
+        transform: rotate(-24deg);
+    }
+    20% {
+        transform: rotate(-24deg);
+    }
+    28% {
+        transform: rotate(24deg);
+    }
+    30% {
+        transform: rotate(24deg);
+    }
+    38% {
+        transform: rotate(-24deg);
+    }
+    40% {
+        transform: rotate(-24deg);
+    }
+    48% {
+        transform: rotate(24deg);
+    }
+    50% {
+        transform: rotate(24deg);
+    }
+    58% {
+        transform: rotate(-24deg);
+    }
+    60% {
+        transform: rotate(-24deg);
+    }
+    68% {
+        transform: rotate(24deg);
+    }
+    75% {
+        transform: rotate(0deg);
+    }
+}
+
+
+@-webkit-keyframes chatSidebar{
+    0% {
+        transform: scale(1.1);
+    }
+
+    50% {
+        transform: scale(.8);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+@keyframes chatSidebar{
+    0% {
+        transform: scale(1.1);
+    }
+
+    50% {
+        transform: scale(.8);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+@-webkit-keyframes chatSidebar{
+    0% {
+        transform: scale(1.1);
+    }
+
+    50% {
+        transform: scale(.8);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+@keyframes chatSidebar{
+    0% {
+        transform: scale(1.1);
+    }
+
+    50% {
+        transform: scale(.8);
+    }
+    100% {
+        transform: scale(1);
+    }
+}

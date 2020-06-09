@@ -34,7 +34,7 @@ module.exports = {
     },
     // entry: "./src/vendor/vendor.js",
     entry: {
-        main: ["./src/vendor/vendor.js", "./src/scss/index.scss"],
+        main: ["./src/vendor/App.js", "./src/scss/index.scss"],
     },
     output: {
         filename: "vendor/vendor.js",

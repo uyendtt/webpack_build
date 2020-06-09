@@ -1,7 +1,43 @@
-@import 'header';
+/*common element*/
+@import 'common/fonts';
+@import 'common/mixin';
+@import 'common/color';
+@import 'common/button';
+@import 'common/select';
+@import 'common/input';
+@import 'common/animation';
+@import 'common/alert';
+@import 'common/datepicker';
 
-body {
-    padding: 0;
-    margin: 0;
-    color: red;  
-}
+/*layout*/
+@import 'layouts/head/head';
+@import 'layouts/shared/shared'; 
+@import 'layouts/panigation';
+@import 'layouts/top_banner';
+@import 'layouts/filter_select';
+@import 'layouts/overview';
+@import 'layouts/map';
+
+@import 'layouts/news/news';
+@import 'layouts/project/project';
+@import 'layouts/register/register';
+@import 'layouts/introduce/introduce';
+@import 'layouts/user_account/user_account';
+
+@import 'layouts/contact';
+@import 'layouts/striking_apartment';
+@import 'layouts/app_managerment';
+@import 'layouts/recruitment';
+@import 'layouts/chat';
+@import 'layouts/sales_policy';
+@import 'layouts/borrow';
+@import 'layouts/loan_online';
+@import 'layouts/exchanges';
+@import 'layouts/save_product';
+
+
+
+// NNTPhu custom 
+@import './layouts/shopping_guide';
+@import './layouts/juridical';
+@import './layouts/hot_product';
